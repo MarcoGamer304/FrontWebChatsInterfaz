@@ -109,8 +109,6 @@ globalGroup.addEventListener('click', () => {
     insideChat.style.display = 'block';
 })
 
-//fix 
-
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 

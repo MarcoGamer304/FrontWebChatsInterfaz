@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 import { createPElement } from "./index";
 
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect('https://backwebchatinterfaz-production.up.railway.app/');
 let userList = new Map();
 
 export function registerUser() {
