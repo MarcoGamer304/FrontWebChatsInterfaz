@@ -1,0 +1,84 @@
+#loginModal {
+    min-width: 20vw;
+    max-width: 80vw;
+    border-radius: 7px;
+    border: transparent;
+    padding: 2vh;
+}
+
+@media (max-width: 768px) {
+    #loginModal {
+        min-width: 75vw;
+    }
+}
+
+#loginModal p {
+    margin: 0;
+}
+
+#loginClose {
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.input {
+    min-width: 96%;
+    padding: 3% 0 3% 0;
+    margin-bottom: 2%;
+    padding-left: 5px;
+}
+
+.submit {
+    min-width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 3% 0 3% 0;
+    color: white;
+    cursor: pointer;
+}
+
+.refactorBtn {
+    border: none;
+    background-color: white;
+}
+
+.clrBlue {
+    color: rgb(7, 51, 198);
+    cursor: pointer;
+}
+
+.createAccount {
+    display: grid;
+    place-items: center;
+    margin-top: 2vh;
+}
+
+#external-login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.networks {
+    cursor: pointer;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2vh;
+}
+
+.line {
+    border: 1px solid black;
+    width: 50%;
+}

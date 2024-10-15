@@ -1,0 +1,127 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(0, 105, 16);
+    padding: 1vh;
+}
+
+.navbarMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 1vh;
+    margin-top: 2vh;
+}
+
+.align-items {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 1vw;
+}
+
+.fs-1-2em{
+    font-size: 1.2em;
+}
+
+#loginBtn{
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 5px;
+    margin-right: 1vw;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+#loginBtn:hover{
+    background-color: rgb(39, 39, 252);
+}
+
+#login-section{
+    width: 98vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10vh;
+}
+
+#logoBranding{
+    width: 10%;
+}
+
+#nav-burger, #nav-add, .chat-icon{
+    width: 2vw;
+    border-radius: 10px;
+    padding: 0.3vw;
+}
+
+#nav-burger:hover, #nav-add:hover{
+    background-color: rgb(237, 237, 237);
+}
+
+#chats{
+    margin-left: 5vw;   
+    margin-right: 5vw;
+}
+
+.conversations{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1vh;
+}
+
+@media only screen and (max-width: 768px) {
+    #logoBranding{
+        width: 25%;
+    }
+    #nav-burger, #nav-add, .chat-icon{
+        width: 7vw;
+    }
+    .conversations{
+        gap: 5vw;
+    }
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.clr-gray{
+    color: rgb(124, 124, 124);
+}
+.conversation-content{   
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#userlist{
+    margin-bottom: 2vh;
+}
+
+.gap-2vw{
+    gap: 2vw;
+}
+
+
+

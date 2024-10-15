@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/messages.css">
+  <script type="module" src="/js/sockets.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <title>Web chat</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="align-items">
+        <img id="logoReturn" src="./public/svg/vite.svg" alt="logo">
+        <h1 class="fs-1-2em">Web Messages</h1>
+      </div>
+      <button id="loginBtn">Login</button>
+    </nav>
+  </header>
+
+  <section id="login-section" >
+    <div class="branding">
+      <h1>Welcome to our message service</h1>
+      <p>plaese Register yourself to enjoys our features</p>
+    </div>
+    <img id="logoBranding" src="./public/svg/microsoft.svg" alt="svg" class="networks">
+  </section>
+
+  <main id="main-section" style="display: none;">
+    <nav class="navbarMain">
+      <img id="nav-burger" src="./public/svg/burger.svg" alt="">
+      <div>
+        <img id="nav-add" src="./public/svg/user-add.svg" alt="">
+      </div>
+    </nav>
+
+    <article id="chats" >
+      <h2>Chats</h2>
+      <div class="conversations" id="globalGroup">
+        <img class="chat-icon" src="./public/svg/portrait.svg" alt="icon">
+        <div class="conversation-content">
+          <h3 class="name margin-0">Global Group</h3>
+          <p class="margin-0 clr-gray"><strong>New Messages</strong></p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <section id="inside-chat" style="display: none;">
+    <main id="messaging">
+    
+      <form id="myForm">
+        <input class="input-chat" type="text" placeholder="message" id="text">
+        <button class="button-chat" type="submit">Send</button>
+      </form>
+  
+      <div id="menssageList"></div>
+    </main>
+  </section>
+
+  <dialog id="loginModal">
+    <div class="modal-header">
+      <p><Strong>Login with</Strong></p>
+      <span id="loginClose">X</span>
+    </div>
+
+    <div id="external-login">
+      <img src="./public/svg/google-logo.svg" width="35vw" alt="svg" class="networks">
+      <img src="./public/svg/github-logo.svg" width="35vw" alt="svg" class="networks">
+      <img src="./public/svg/facebook-logo.svg" width="35vw" alt="svg" class="networks">
+    </div>
+
+    <div class="separator">
+      <span class="line"></span>
+      <span> or </span>
+      <span class="line"></span>
+    </div>
+
+    <form id="loginForm">
+      <div>
+        <input type="text" placeholder="Username" class="input" id="input-login-user" required>
+      </div>
+      <div>
+        <input type="Password" placeholder="Password" class="input" id="input-login-pass" required>
+      </div>
+      <button class="submit">Send</button>
+    </form>
+    <span class="createAccount">Looking to<button class="refactorBtn clrBlue">create an account ?</button></span>
+  </dialog>
+
+  <dialog id="addUser">
+    <div class="modal-header margin-0">
+      <p><Strong>Add user</Strong></p>
+      <span id="userClose">X</span>
+    </div>
+
+    <form id="userForm">
+      <div>
+        <label for="product">Select a username: </label>
+        <select id="userlist" required>
+          <option value="producto1">Producto 1</option>
+          <option value="producto2">Producto 2</option>
+          <option value="producto3">Producto 3</option>
+          <option value="producto4">Producto 4</option>
+        </select>
+      </div>
+      <button class="submit">Send</button>
+    </form>
+  </dialog>
+  
+  <dialog id="optionsModal">
+    <div class="modal-header margin-0 gap-2vw">
+      <p><Strong>Comming soon</Strong></p>
+      <span id="optionsClose">X</span>
+    </div>
+  </dialog>
+
+</body>
+
+</html>
